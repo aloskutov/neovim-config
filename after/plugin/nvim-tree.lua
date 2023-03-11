@@ -8,11 +8,11 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup()
+require('nvim-tree').setup()
 
 -- OR setup with some options
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
+require('nvim-tree').setup({
+  sort_by = 'case_sensitive',
   renderer = {
     group_empty = true,
   },
@@ -22,3 +22,8 @@ require("nvim-tree").setup({
 })
 
 vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<leader>ntt', ':NvimTreeToggle<CR>')
+vim.keymap.set('n', '<leader>ntc', ':NvimTreeCollapse<CR>')
+vim.keymap.set('n', '<leader>ntf', ':NvimTreeFocus<CR>')
+vim.keymap.set('n', '<leader>ntr', ':NvimTreeRefresh<CR>')
+

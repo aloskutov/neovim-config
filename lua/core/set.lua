@@ -1,5 +1,5 @@
-vim.opt.guicursor = ""
-vim.opt.mouse = "a"             -- Enable mouse support
+vim.opt.guicursor = ''
+vim.opt.mouse = 'a'             -- Enable mouse support
 vim.opt.termguicolors = true    -- Enable 24-bit RGB colors
 vim.opt.clipboard = 'unnamed'
 
